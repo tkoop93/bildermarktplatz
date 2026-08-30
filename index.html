@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilder Marktplatz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/path/to/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Eine elegante One-Page HTML-Seite mit einem Bilder Marktplatz.">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Lora', serif;
+            background-color: #f4f0e9; /* Hintergrundfarbe der Seite angepasst */
+            color: #333333;
+            position: relative;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            max-width: 500px; /* Begrenzung der Maximalbreite für mobile Optimierung */
+        }
+
+        h1 {
+            font-size: 2.2rem; /* Verkleinerung der Schriftgröße für bessere mobile Darstellung */
+            margin-bottom: 20px;
+            color: #333333;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: block;
+            width: 80%; /* Anstelle einer festen Breite 80% der Breite des Containers */
+            padding: 12px; /* Verringerung der Polsterung für mobile Geräte */
+            margin: 10px auto;
+            text-align: center;
+            background-color: #A3B4A0;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #556B2F;
+            transform: scale(1.05);
+        }
+
+        /* Florale Elemente */
+        .floral {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10; /* Höherer Z-Index, um sicherzustellen, dass das Bild über anderen Elementen liegt */
+            width: 150px; /* Breite des Bildes */
+            height: auto; /* Automatische Höhe basierend auf der Breite */
+        }
+
+        .floral-bottom {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 10; /* Höherer Z-Index */
+            width: 150px;
+            height: auto;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8rem; /* Anpassung der Überschrift für kleinere Bildschirme */
+            }
+
+            .button {
+                width: 90%; /* Buttons noch schmaler für kleine Bildschirme */
+                padding: 10px; /* Verringerung der Polsterung */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Florale Elemente mit transparentem Hintergrund -->
+    <img src="images/floral-element-neu.png" class="floral" alt="Floral Element">
+    <img src="images/floral-element-neu.png" class="floral-bottom" alt="Floral Element">
+    
+    <div class="container">
+        <h1>Bilder Marktplatz</h1>
+        <p>Du hast schöne Fotos von der Hochzeit? Dann teile diese mit allen und lade sie in die gemeinsame Dropbox. Ganz einfach über dein Handy. Vielen Dank!</p>
+        
+        <a href="https://www.dropbox.com/request/REKCLrKvXytenAcsQ9d5" class="button">Bilder Upload</a>
+        <a href="https://www.dropbox.com/scl/fo/0wrbum76n48w69g3tma5z/AN9iY9IkYHIl57_PCq5-GaU?rlkey=0zou8in5qpd7ynic5yis9ynlh&st=vimu10yf&dl=0" class="button">Bilder Download</a>
+    </div>
+</body>
+</html>
