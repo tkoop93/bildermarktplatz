@@ -1,0 +1,9 @@
+{
+  "name": "Nebentisch",
+  "short_name": "Nebentisch",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4efe7",
+  "theme_color": "#1e342c",
+  "description": "Wer hier ist, ist nicht weit."
+}
